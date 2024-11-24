@@ -43,3 +43,7 @@ npx parcel build index.html --no-cache
 One html
 One css
 One js file
+
+
+BrowsersList to create diff version to support diff versions of browser
+Add browser list array with "last 2 versions" in package.json
