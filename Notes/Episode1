@@ -1,3 +1,11 @@
+1. How React create elements ?
+Syntax: React.createElement( element (h1/div), attributes (“id”) , Children (inner Text) [Array] )
+All the html elements are plain javascript objects in react
+JSX makes our life easier ( React Element Example )
+React.render replaces the root.
+
+
+
 /*
 <div id="root">
     <div id="parent">
@@ -13,9 +21,6 @@
 </div>
 */
 
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-
 const element = React.createElement("div", {id: "parent"},
     [
         React.createElement("div", {id: "child1"},
@@ -29,5 +34,3 @@ const element = React.createElement("div", {id: "parent"},
     ]
 )
 const root = ReactDOM.createRoot(document.getElementById("root"));
-console.log(element);
-root.render(element)

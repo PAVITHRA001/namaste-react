@@ -1,5 +1,0 @@
-1. How React create elements ?
-Syntax: React.createElement( element (h1/div), attributes (“id”) , Children (inner Text) [Array] )
-All the html elements are plain javascript objects in react
-JSX makes our life easier ( React Element Example )
-React.render replaces the root.

@@ -1,0 +1,45 @@
+Install npm
+Project needs bundler, Code must be minified, packaged and bundled. Webpack bundled.Parcel - Package bundler
+Npm install parcel —registry=https://registry.npmjs.org
+
+
+
+Package-lock.json has exact version of what package is installed
+Package-lock has has of sha-512 to maintain exact same version in local and production
+Each dependency has its own package.json
+
+npx parcel index.html ( Source File )
+npm - To install a package
+npx - To execute a package
+
+
+Browser scripts cannot have imports or exports.
+Add type=module in scripts, to understand it’s not a normal browser script.
+
+
+# Parcel
+- Dev build
+- Local server
+- HMR - Hot Module Replacement
+- uses File watching algorithm (C++)
+- Image optimization (Images in our site)
+- Minification - Minify our file for production build
+- Bundling
+- Compressing
+- Consistent Hashing
+- Code Splitting
+- Differential bundling
+
+
+npx parcel index.html --no-cache --https
+
+
+remove "main": App.js from package.json
+
+
+Production build
+npx parcel build index.html --no-cache
+
+One html
+One css
+One js file
